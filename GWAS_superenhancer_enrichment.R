@@ -6,6 +6,7 @@ options(stringsAsFactors=F)
 snpscz=read.table('highpro_causalsnp.txt',header=F,sep='\t')#load schizophrenia snps for enrichment calculation
 colnames(snpscz)=c('chr','start','end')
 
+#*********define bedintersect function*************
 bedTools.2in<-function(functionstring="bedIntersect",bed1,bed2,opt.string="")
 {
   #create temp files
