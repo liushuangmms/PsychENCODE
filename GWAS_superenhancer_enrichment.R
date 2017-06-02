@@ -58,8 +58,7 @@ get_ens<-function(file_name){
   ens_stats=fisher.test(fishertable,alternative ="greater")#chisq.test(fishertable)
   return(ens_stats$p.value)}
 
-#load H3K27ac peaks
-
+#******load H3K27ac peaks/enhancers/super enhancers or methylation sites*******
 peaklist=c('PSNT.Adult','PSNT.infant','PSNT.Fetal','PSNT.Embryo','PSNT.DFC','PSNT.CBC')
 peakname=paste(peaklist,'present-peaks.hg19.bedoverlapped.bed',sep='-')
 
